@@ -1,7 +1,7 @@
 def firstUnique(var):
     emptydict = {}
     for z in "abcdefghijklmnopqrstuvwxyz":
-        emptydict.update({z:[0,0, False]})
+        emptydict.update({z:[0,0]})
     
     ## first pass
     for z in var:
