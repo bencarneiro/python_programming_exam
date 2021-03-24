@@ -1,0 +1,22 @@
+<html>
+
+<head><h1>Job Difficulty Index</h1></head>
+
+<body>
+
+	<form action="/" method="post">
+		<label for="num">Search for a Job:</label><br>
+		Job Title: <input type="text" id="job_title" name="jobtitle" placeholder="EG Singer or Carpenter"/><br>
+		Job Location: <input type="text" id="job_location" name="joblocation" placeholder="Akron or Cincinnati"/><br>
+		<input type="submit" value="submit"/>
+	</form><br>
+{% if jt %}	
+	<h1>Job Title: {{jt}}</h1>
+	<h1>Job Location: {{jl}}</h1>
+	<h1>Total Resumes: {{res}}</h1>
+	<h1>Total Area Jobs: {{jobs}}</h1>
+	<h1>Resumes Per Job Opportunity (Market Competitiveness): {{result}}</h1>
+	<h1>The higher this competitiveness ratio, the easier it is to make quality hires</h1>
+{% endif %}
+</body>
+</html>
